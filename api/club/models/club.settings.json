@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "clubs",
+  "info": {
+    "name": "club"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "teams": {
+      "via": "club",
+      "collection": "team"
+    }
+  }
+}

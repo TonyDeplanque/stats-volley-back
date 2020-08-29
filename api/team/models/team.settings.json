@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "teams",
+  "info": {
+    "name": "Team"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "club": {
+      "model": "club",
+      "via": "teams"
+    },
+    "players": {
+      "collection": "joueur",
+      "via": "team"
+    },
+    "name": {
+      "type": "string"
+    }
+  }
+}

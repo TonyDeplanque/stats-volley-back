@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_match_sets",
+  "info": {
+    "name": "Set",
+    "icon": "basketball-ball"
+  },
+  "options": {},
+  "attributes": {
+    "score_equipe_domicile": {
+      "type": "integer"
+    },
+    "score_equipe_exterieur": {
+      "type": "integer"
+    },
+    "order": {
+      "type": "integer"
+    }
+  }
+}

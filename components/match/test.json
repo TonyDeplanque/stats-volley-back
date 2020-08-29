@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_match_tests",
+  "info": {
+    "name": "Evaluation",
+    "icon": "ad"
+  },
+  "options": {},
+  "attributes": {
+    "evaluation": {
+      "model": "evaluation"
+    },
+    "player": {
+      "model": "joueur"
+    },
+    "match": {
+      "model": "match"
+    },
+    "set_number": {
+      "type": "integer"
+    }
+  }
+}

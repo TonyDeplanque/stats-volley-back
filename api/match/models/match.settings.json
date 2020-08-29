@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "matches",
+  "info": {
+    "name": "Match"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "players": {
+      "collection": "joueur"
+    },
+    "sets": {
+      "type": "component",
+      "repeatable": true,
+      "component": "match.set"
+    },
+    "victory": {
+      "type": "boolean"
+    },
+    "team": {
+      "model": "team"
+    },
+    "started_at": {
+      "type": "datetime"
+    },
+    "comment": {
+      "type": "richtext"
+    },
+    "video_url": {
+      "type": "string"
+    },
+    "Evaluations": {
+      "type": "component",
+      "repeatable": true,
+      "component": "match.test"
+    }
+  }
+}
